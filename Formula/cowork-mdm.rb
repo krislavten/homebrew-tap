@@ -7,21 +7,21 @@ class CoworkMdm < Formula
 plugin marketplace management, and per-host diagnostics.
 "
   homepage "https://github.com/krislavten/cowork-mdm"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.3.1/cowork-mdm_0.3.1_darwin_x86_64.tar.gz"
-      sha256 "5f71df5463bc925641e0da5ffb65121d43a0fd712a620968923185cffe7b8d25"
+      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.4.0/cowork-mdm_0.4.0_darwin_x86_64.tar.gz"
+      sha256 "4c200728de9afd1ff2613126de55ff9e9fdadb689912dc0a23b344778c7b8345"
 
       define_method(:install) do
         bin.install "cowork-mdm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.3.1/cowork-mdm_0.3.1_darwin_arm64.tar.gz"
-      sha256 "adf18bbfadfb9e45d6246db826c51b9a4538f37dc703fcf0f23d85af8424ddcc"
+      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.4.0/cowork-mdm_0.4.0_darwin_arm64.tar.gz"
+      sha256 "d5b4bfbd965472a89aad927f959537c9b2b3d10dcbfc69da2032924833ddfc4b"
 
       define_method(:install) do
         bin.install "cowork-mdm"
@@ -31,15 +31,15 @@ plugin marketplace management, and per-host diagnostics.
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.3.1/cowork-mdm_0.3.1_linux_x86_64.tar.gz"
-      sha256 "9226846ecb6f80eb041b0617470343d3e5acc803815c42f1016e972b7e774380"
+      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.4.0/cowork-mdm_0.4.0_linux_x86_64.tar.gz"
+      sha256 "4523c7d3bf7c853295b67c9fb0b92658facd6a6dc2a4de167277111a61b65c64"
       define_method(:install) do
         bin.install "cowork-mdm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.3.1/cowork-mdm_0.3.1_linux_arm64.tar.gz"
-      sha256 "21a9c7b4eb8c0fb1e53f06e57bd87dabd7a029d8c36a275df605855eccbcba6e"
+      url "https://github.com/krislavten/cowork-mdm/releases/download/v0.4.0/cowork-mdm_0.4.0_linux_arm64.tar.gz"
+      sha256 "9eed5a91a3fb79851e8cdc1a394809e6ee93c4a5d7ca17e9239dc4ba7af40400"
       define_method(:install) do
         bin.install "cowork-mdm"
       end
